@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Lap</title>
+</head>
+<body>
+
+<!-- タイトル -->
+
+    <h1 class="title">Event Lap</h1>
+
+<!-- タイマー部分 -->
+
+    <div class="time-container">
+        <span id="timer">
+        00<span style="color:#787c87; font-size:6rem;">h</span> 
+        00<span style="color:#787c87; font-size:6rem;">min</span>  
+        00<span style="color:#787c87; font-size:6rem;">sec </span>  
+        000<span style="color:#787c87; font-size:6rem;">msec</span> 
+        </span>
+    </div>
+
+<!-- 日時部分 -->
+
+    <span id="date">loading...</span>
+    
+
+<!-- ボタン部分 -->
+
+    <div class="btn-container">
+        <button id="start" class="btn">START</button>
+        <button id="stop"class="btn" disabled="disabled">FINISH!</button>
+    </div>
+
+<!-- Lap部分 -->
+<div id='lapAreaContainer'>
+    <div id='lapTextArea'>
+        <ul id='startLapText' class='lapText'></ul>
+        <ul id='endLapText' class='lapText'></ul>
+        <ul id='elapsedTimeText' class='lapText'></ul>
+        <ul id='programTitleText' class='lapText'></ul>
+    </div>
+    <div id="shadow"></div>
+    <div id='lapArea'>
+        <ul id='startLap' class='laps'></ul>
+        <ul id='endLap' class='laps'></ul>
+        <ul id='calLap' class='laps'></ul>
+        <ul id='lapText' class='laps'></ul>
+    </div>
+</div>
+
+<!-- JS File -->
+
+    <script src="script_220425.js"></script>
+</body>
+</html>
